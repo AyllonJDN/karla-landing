@@ -13,7 +13,6 @@ import Sistema from './sections/Sistema'
 import NivelIntervencion from './sections/NivelIntervencion'
 import Servicios from './sections/Servicios'
 import Comparador from './sections/Comparador'
-import Evidencia from './sections/Evidencia'
 import Karla from './sections/Karla'
 import CreatorFit from './sections/CreatorFit'
 import CTAFinal from './sections/CTAFinal'
@@ -50,7 +49,6 @@ export default function App() {
         <NivelIntervencion />
         <Servicios />
         <Comparador />
-        <Evidencia />
         <Karla />
         <CreatorFit />
         <CTAFinal />

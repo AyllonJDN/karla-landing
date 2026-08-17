@@ -1,5 +1,7 @@
 import { useReveal } from '../hooks/useReveal'
 
+const NODES = ['Visión', 'Estrategia', 'Negocio', 'Operación', 'Equipo', 'Crecimiento']
+
 export default function DireccionEstrategica() {
   const ref = useReveal()
 
@@ -15,8 +17,20 @@ export default function DireccionEstrategica() {
           </p>
           <div className="direccion__body">
             <p>
-              Karla trabaja contigo para ordenar visión, estrategia, negocio, operación, equipo y crecimiento.
+              Es tu directora estratégica que trabaja contigo para ordenar visión, estrategia, negocio, operación, equipo y crecimiento.
             </p>
+
+            <div className="mindmap" aria-hidden="true">
+              <span className="mindmap__center">Tu marca</span>
+              <div className="mindmap__nodes">
+                {NODES.map((n, i) => (
+                  <span key={n} className={`mindmap__node mindmap__node--${i % 3}`}>
+                    {n}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <p>
               No entra a administrar tu contenido.<br />
               No entra a darte consejos puntuales.

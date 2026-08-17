@@ -7,10 +7,14 @@ export default function Reframe() {
     <section className="section section-reframe">
       <div className="container">
         <div className="reframe__inner reveal" ref={ref}>
-          <h2 className="reframe__title">
-            No es un problema de contenido.<br />
-            Es un problema de dirección.
-          </h2>
+          <span className="tape tape--coral reframe__eyebrow">Reframe</span>
+
+          <div className="reframe__split">
+            <p className="reframe__no">No es un problema de contenido.</p>
+            <span className="reframe__arrow" aria-hidden="true">→</span>
+            <p className="reframe__yes">Es un problema de dirección.</p>
+          </div>
+
           <div className="reframe__body">
             <p>Producir más no resuelve el fondo.<br />
             Contratar a alguien tampoco, si no hay dirección clara detrás.</p>

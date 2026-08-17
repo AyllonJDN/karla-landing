@@ -7,6 +7,15 @@ export default function Karla() {
     <section className="section section-karla">
       <div className="container">
         <div className="karla__inner reveal" ref={ref}>
+          <div className="karla__media">
+            <img
+              src="/images/karla-conferencia.jpg"
+              alt="Karla Rodríguez"
+              className="karla__photo"
+            />
+            <span className="tape karla__media-tag">Karla Rodríguez</span>
+          </div>
+
           <div className="karla__text-col">
             <h2 className="karla__title">Karla Rodríguez</h2>
             <p className="karla__subtitle">
@@ -27,7 +36,6 @@ export default function Karla() {
               </p>
             </div>
           </div>
-          {/* Espacio reservado para fotografía editorial — MANUAL REVIEW */}
         </div>
       </div>
     </section>

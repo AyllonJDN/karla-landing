@@ -9,7 +9,7 @@ export default function Footer() {
             <Monogram />
             <div>
               <img
-                src="/logos/logo-matiz-provisional.jpg"
+                src="/logos/logo-matiz-provisional.png"
                 alt="Matiz"
                 className="footer__logo"
               />

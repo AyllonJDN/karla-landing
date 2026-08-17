@@ -11,7 +11,13 @@ export default function Hero({ ctaRef }) {
 
   return (
     <section className="section section-hero">
-      <span className="hero__bg-wordmark">Matiz</span>
+      <div className="hero__bg-wordmark" aria-hidden="true">
+        <div className="hero__bg-wordmark-track">
+          <span>Matiz</span>
+          <span>Matiz</span>
+          <span>Matiz</span>
+        </div>
+      </div>
       <div className="hero__bg-blob" aria-hidden="true" />
       <div className="container">
         <div className="hero__inner">

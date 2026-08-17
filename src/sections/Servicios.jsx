@@ -1,4 +1,5 @@
 import { useReveal } from '../hooks/useReveal'
+import CTAButton from '../components/CTAButton'
 
 const SERVICES = [
   {
@@ -38,6 +39,7 @@ export default function Servicios() {
               <p className="service-card__name">{s.name}</p>
               <p className="service-card__body">{s.body}</p>
               <p className="service-card__detail">{s.detail}</p>
+              <CTAButton className="service-card__cta">Reservar espacio con el equipo</CTAButton>
             </div>
           ))}
         </div>
