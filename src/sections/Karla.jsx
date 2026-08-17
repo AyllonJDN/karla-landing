@@ -1,10 +1,12 @@
 import { useReveal } from '../hooks/useReveal'
+import AuroraBackground from '../components/AuroraBackground'
 
 export default function Karla() {
   const ref = useReveal()
 
   return (
-    <section className="section section-karla">
+    <section className="section section-karla section-dark-sunset">
+      <AuroraBackground variant="dark" />
       <div className="container">
         <div className="karla__inner reveal" ref={ref}>
           <div className="karla__media">

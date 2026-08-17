@@ -185,6 +185,23 @@ ul { list-style: none; }
   height: 100%;
 }
 
+/* ─── SHARED DARK SUNSET SECTION ─── */
+.section-dark-sunset {
+  background: var(--sunset);
+  border-top: none;
+  color: var(--on-dark);
+}
+
+.section-dark-sunset::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 250, 245, 0.12) 1px, transparent 0);
+  background-size: 26px 26px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /* ─── SECTION BASE ─── */
 .section {
   padding-block: var(--sp-8);
@@ -893,12 +910,14 @@ ul { list-style: none; }
 }
 
 /* ─── 05 DIRECCIÓN ESTRATÉGICA ─── */
-.section-direccion {
-  background: var(--cream);
-}
-
 .direccion__inner {
   max-width: 720px;
+  position: relative;
+  z-index: 1;
+}
+
+.direccion__eyebrow {
+  margin-bottom: var(--sp-4);
 }
 
 .direccion__title {
@@ -908,21 +927,21 @@ ul { list-style: none; }
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: var(--sp-3);
-  color: var(--burgundy);
+  color: var(--on-dark);
 }
 
 .direccion__subtitle {
   font-family: var(--sans);
   font-weight: 300;
   font-size: clamp(16px, 1.6vw, 19px);
-  color: var(--muted);
+  color: #ffd9cd;
   margin-bottom: var(--sp-5);
 }
 
 .direccion__body p {
   font-size: clamp(16px, 1.5vw, 18px);
   line-height: 1.8;
-  color: var(--ink-soft);
+  color: var(--on-dark-muted);
 }
 
 .direccion__body p + p {
@@ -1129,8 +1148,10 @@ ul { list-style: none; }
 }
 
 /* ─── 08 SERVICIOS ─── */
-.section-servicios {
-  background: var(--cream);
+.servicios__eyebrow {
+  margin-bottom: var(--sp-5);
+  position: relative;
+  z-index: 1;
 }
 
 .servicios__header {
@@ -1159,6 +1180,8 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-3);
+  position: relative;
+  z-index: 1;
 }
 
 .service-card {
@@ -1348,16 +1371,14 @@ ul { list-style: none; }
 }
 
 /* ─── 11 KARLA ─── */
-.section-karla {
-  background: linear-gradient(180deg, var(--cream) 0%, #fdf0f4 100%);
-}
-
 .karla__inner {
   display: grid;
   grid-template-columns: 0.85fr 1fr;
   gap: var(--sp-7);
   align-items: center;
   max-width: 1040px;
+  position: relative;
+  z-index: 1;
 }
 
 .karla__media {
@@ -1370,7 +1391,7 @@ ul { list-style: none; }
   object-fit: cover;
   object-position: top center;
   border-radius: 24px;
-  box-shadow: 0 32px 60px -28px rgba(71, 11, 36, 0.45);
+  box-shadow: 0 32px 64px -24px rgba(20, 4, 10, 0.55), 0 0 0 1px rgba(255, 250, 245, 0.12);
 }
 
 .karla__media-tag {
@@ -1386,7 +1407,7 @@ ul { list-style: none; }
   line-height: 1.05;
   letter-spacing: -0.025em;
   margin-bottom: var(--sp-2);
-  color: var(--burgundy);
+  color: var(--on-dark);
 }
 
 .karla__subtitle {
@@ -1394,7 +1415,7 @@ ul { list-style: none; }
   font-weight: 300;
   font-size: 13px;
   letter-spacing: 0.06em;
-  color: var(--coral-deep);
+  color: #ffd9cd;
   margin-bottom: var(--sp-5);
   text-transform: uppercase;
 }
@@ -1402,7 +1423,7 @@ ul { list-style: none; }
 .karla__body p {
   font-size: clamp(16px, 1.5vw, 18px);
   line-height: 1.8;
-  color: var(--ink-soft);
+  color: var(--on-dark-muted);
 }
 
 .karla__body p + p {
@@ -1413,13 +1434,13 @@ ul { list-style: none; }
   margin-top: var(--sp-5);
   padding-top: var(--sp-4);
   padding-left: var(--sp-3);
-  border-top: 1px solid var(--separator);
+  border-top: 1px solid var(--separator-dark);
   border-left: 2px solid var(--coral);
 }
 
 .karla__matiz-note p {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--on-dark-muted);
   line-height: 1.65;
   font-style: italic;
   font-family: var(--serif);

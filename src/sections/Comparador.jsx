@@ -1,4 +1,5 @@
 import { useReveal } from '../hooks/useReveal'
+import AuroraBackground from '../components/AuroraBackground'
 
 const NO_ITEMS = [
   'No es lo mismo que contratar a alguien para producir contenido.',
@@ -11,6 +12,7 @@ export default function Comparador() {
 
   return (
     <section className="section section-comparador">
+      <AuroraBackground variant="light" />
       <div className="container">
         <div className="comparador__inner reveal" ref={ref}>
           <h2 className="comparador__title">

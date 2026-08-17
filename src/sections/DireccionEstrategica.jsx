@@ -1,4 +1,5 @@
 import { useReveal } from '../hooks/useReveal'
+import AuroraBackground from '../components/AuroraBackground'
 
 const NODES = ['Visión', 'Estrategia', 'Negocio', 'Operación', 'Equipo', 'Crecimiento']
 
@@ -6,9 +7,11 @@ export default function DireccionEstrategica() {
   const ref = useReveal()
 
   return (
-    <section className="section section-direccion">
+    <section className="section section-direccion section-dark-sunset">
+      <AuroraBackground variant="dark" />
       <div className="container">
         <div className="direccion__inner reveal" ref={ref}>
+          <span className="tape direccion__eyebrow">Dirección</span>
           <h2 className="direccion__title">
             Karla dirige el negocio detrás de tu marca personal.
           </h2>

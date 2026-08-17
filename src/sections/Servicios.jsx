@@ -1,5 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
 import CTAButton from '../components/CTAButton'
+import AuroraBackground from '../components/AuroraBackground'
 
 const SERVICES = [
   {
@@ -29,8 +30,10 @@ export default function Servicios() {
   const ref = useReveal()
 
   return (
-    <section className="section section-servicios">
+    <section className="section section-servicios section-dark-sunset">
+      <AuroraBackground variant="dark" />
       <div className="container">
+        <span className="tape servicios__eyebrow">Servicios</span>
         <div className="servicios__grid reveal" ref={ref}>
           {SERVICES.map((s) => (
             <div key={s.label} className="service-card">

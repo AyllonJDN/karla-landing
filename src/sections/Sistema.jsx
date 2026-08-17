@@ -1,11 +1,13 @@
 import { useReveal } from '../hooks/useReveal'
 import SystemDiagram from '../components/SystemDiagram'
+import AuroraBackground from '../components/AuroraBackground'
 
 export default function Sistema() {
   const ref = useReveal()
 
   return (
     <section className="section section-sistema">
+      <AuroraBackground variant="light" />
       <div className="container">
         <div className="sistema__inner reveal" ref={ref}>
           <div className="sistema__grid">

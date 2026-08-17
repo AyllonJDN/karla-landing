@@ -1,4 +1,5 @@
 import { useReveal } from '../hooks/useReveal'
+import AuroraBackground from '../components/AuroraBackground'
 
 const TRUTHS = [
   'Contenido genera valor.',
@@ -11,6 +12,7 @@ export default function Tesis() {
 
   return (
     <section className="section section-tesis">
+      <AuroraBackground variant="light" />
       <div className="container">
         <div className="reveal" ref={ref}>
           <span className="tape tesis__label">Tres verdades sobre lo que construyes.</span>
