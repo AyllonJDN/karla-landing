@@ -1,16 +1,37 @@
-# React + Vite
+# Karla Rodríguez / Matiz — Landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing oficial de Karla Rodríguez y Matiz. React + Vite.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Build de producción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run build
+npm run preview
+```
 
-## Expanding the Oxlint configuration
+## Deploy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+El proyecto está listo para desplegarse en [Vercel](https://vercel.com) sin configuración adicional:
+
+1. Sube este repositorio a GitHub.
+2. En Vercel: **Add New Project** → importa el repositorio.
+3. Framework preset: **Vite** (autodetectado). Build command: `vite build`. Output directory: `dist`.
+4. Deploy.
+
+## Documentación del proyecto
+
+La fuente de verdad de copy, dirección de diseño y arquitectura del sitio vive en `/project`:
+
+- `01_PROJECT_BRIEF.md`
+- `02_COPY_MASTER.md` — copy aprobado, no modificar sin autorización.
+- `03_DESIGN_DIRECTION.md`
+- `04_SITE_ARCHITECTURE.md`
+- `05_SERVICES.md`
+- `06_ASSETS_MANIFEST.md`
