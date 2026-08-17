@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import StickyCtaBar from './components/StickyCtaBar'
+import ScrollProgress from './components/ScrollProgress'
+import CursorGlow from './components/CursorGlow'
+import Marquee from './components/Marquee'
 import Hero from './sections/Hero'
 import Problema from './sections/Problema'
 import Reframe from './sections/Reframe'
@@ -33,9 +36,12 @@ export default function App() {
 
   return (
     <>
+      <ScrollProgress />
+      <CursorGlow />
       <Navbar hideCta={heroCtaOutOfView} />
       <main>
         <Hero ctaRef={heroCtaRef} />
+        <Marquee />
         <Problema />
         <Reframe />
         <Tesis />

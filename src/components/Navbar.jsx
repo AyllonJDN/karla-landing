@@ -4,7 +4,7 @@ export default function Navbar({ hideCta }) {
   return (
     <nav className="navbar" aria-label="Navegación principal">
       <div className="navbar__inner">
-        <a href="/" aria-label="Matiz — Inicio">
+        <a href="/" aria-label="Matiz — Inicio" className="navbar__brand">
           <img
             src="/logos/logo-matiz-provisional.jpg"
             alt="Matiz"

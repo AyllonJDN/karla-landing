@@ -13,7 +13,7 @@ export default function Tesis() {
     <section className="section section-tesis">
       <div className="container">
         <div className="reveal" ref={ref}>
-          <span className="tesis__label">Tres verdades sobre lo que construyes.</span>
+          <span className="tape tesis__label">Tres verdades sobre lo que construyes.</span>
           <div className="tesis__truths">
             {TRUTHS.map((truth) => (
               <div key={truth} className="tesis__truth-item">

@@ -8,7 +8,7 @@ export default function CreatorFit() {
     <section className="section section-creator-fit">
       <div className="container">
         <div className="creator-fit__inner reveal" ref={ref}>
-          <span className="creator-fit__label">Creator Fit — 15 minutos</span>
+          <span className="tape tape--coral creator-fit__label">Creator Fit — 15 minutos</span>
           <h2 className="creator-fit__title">
             ¿Es este el momento adecuado para trabajar juntos?
           </h2>
