@@ -1,0 +1,20 @@
+import CTAButton from './CTAButton'
+
+export default function Navbar({ hideCta }) {
+  return (
+    <nav className="navbar" aria-label="Navegación principal">
+      <div className="navbar__inner">
+        <a href="/" aria-label="Matiz — Inicio">
+          <img
+            src="/logos/logo-matiz-provisional.jpg"
+            alt="Matiz"
+            className="navbar__logo"
+          />
+        </a>
+        <div className={`navbar__cta${hideCta ? ' hidden' : ''}`}>
+          <CTAButton>Reservar espacio con el equipo</CTAButton>
+        </div>
+      </div>
+    </nav>
+  )
+}
