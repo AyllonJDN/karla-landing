@@ -14,6 +14,7 @@ import NivelIntervencion from './sections/NivelIntervencion'
 import Servicios from './sections/Servicios'
 import Comparador from './sections/Comparador'
 import Karla from './sections/Karla'
+import Contenido from './sections/Contenido'
 import CreatorFit from './sections/CreatorFit'
 import CTAFinal from './sections/CTAFinal'
 import Footer from './sections/Footer'
@@ -50,6 +51,7 @@ export default function App() {
         <Servicios />
         <Comparador />
         <Karla />
+        <Contenido />
         <CreatorFit />
         <CTAFinal />
         <Footer />

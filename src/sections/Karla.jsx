@@ -1,5 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
 import AuroraBackground from '../components/AuroraBackground'
+import KarlaVideoCard from '../components/KarlaVideoCard'
 
 export default function Karla() {
   const ref = useReveal()
@@ -39,6 +40,8 @@ export default function Karla() {
             </div>
           </div>
         </div>
+
+        <KarlaVideoCard />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import Monogram from '../components/Monogram'
+import SocialLinks from '../components/SocialLinks'
 
 export default function Footer() {
   return (
@@ -16,6 +17,7 @@ export default function Footer() {
               <p className="footer__tagline">
                 Dirección Estratégica para creadores y marcas personales.
               </p>
+              <SocialLinks className="footer__socials" />
             </div>
           </div>
           <div>
