@@ -63,7 +63,7 @@ export default function Hero({ ctaRef }) {
 
           <div className="hero__meta">
             <div ref={ctaRef}>
-              <CTAButton>Reservar espacio con el equipo</CTAButton>
+              <CTAButton>Reserva tu espacio</CTAButton>
             </div>
             <span className="hero__meta-note">una conversación de 15 min</span>
           </div>

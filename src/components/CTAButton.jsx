@@ -1,4 +1,4 @@
-const CTA_URL = 'https://calendar.app.google/fjyn6SfoawjVWtfW7'
+const CTA_URL = 'https://agendalo.io/karlarodriguez/-quick-meeting'
 
 export default function CTAButton({ href = CTA_URL, children, className = '' }) {
   return (

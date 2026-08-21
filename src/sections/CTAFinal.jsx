@@ -14,7 +14,7 @@ export default function CTAFinal() {
           <p className="cta-final__subtitle">
             El primer paso es una conversación de 15 minutos.
           </p>
-          <CTAButton>Reservar espacio con el equipo</CTAButton>
+          <CTAButton>Reserva tu espacio</CTAButton>
         </div>
       </div>
     </section>

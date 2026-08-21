@@ -12,7 +12,7 @@ export default function Navbar({ hideCta }) {
           />
         </a>
         <div className={`navbar__cta${hideCta ? ' hidden' : ''}`}>
-          <CTAButton>Reservar espacio con el equipo</CTAButton>
+          <CTAButton>Reserva tu espacio</CTAButton>
         </div>
       </div>
     </nav>
